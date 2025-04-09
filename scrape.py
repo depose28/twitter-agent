@@ -6,5 +6,7 @@ async def main():
     # Later: add other sources like Discord or Dune here
 
 if __name__ == "__main__":
+    import asyncio
     asyncio.run(main())
+
 
