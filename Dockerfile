@@ -6,6 +6,5 @@ COPY . .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["python", "scrape.py"]
-
+CMD ["python3", "scrape.py"]
 
