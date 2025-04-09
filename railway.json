@@ -1,0 +1,7 @@
+{
+  "build": {
+    "postinstall": "python3 -m playwright install"
+  },
+  "start": "python3 scrape.py"
+}
+
