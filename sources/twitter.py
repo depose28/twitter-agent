@@ -5,7 +5,7 @@ from supabase_client import save_tweet
 
 async def scrape_twitter():
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=False, slow_mo=250)
+        browser = await p.chromium.launch(headless=True)
         page = await browser.new_page()
         await page.goto("https://x.com/0xfluid")
         await page.wait_for_selector('article div[lang]', timeout=15000)
